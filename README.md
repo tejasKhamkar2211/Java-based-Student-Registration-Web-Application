@@ -23,7 +23,31 @@ C:\Users\tejas>scp -i Downloads\nverginiakeypair.pem Downloads\student.war ec2-u
 student.war                                                                                                                               100%   87KB  48.3KB/s   00:01
 
 3. Database Setup:
-
+install Database
    <img width="960" height="540" alt="Image" src="https://github.com/user-attachments/assets/83803125-a9f0-4684-aa0c-525b68cef874" />
+
+   
+connect with Ec2 instance:
+
+<img width="960" height="540" alt="Image" src="https://github.com/user-attachments/assets/c2f513fa-bc48-477f-b64a-8aaeda847b15" />
+
+4. Database Connector Configuration:
+
+The mysql-connector.jar file allows your Java application to communicate with the MySQL database using JDBC.
+
+You uploaded it to your EC2 instance and moved it into Tomcat’s lib directory so it’s accessible to your web app.
+
+Restarting Tomcat ensures the connector is loaded, enabling database operations like insert, update, and fetch.
+C:\Users\tejas>scp -i Downloads\nverginiakeypair.pem "Downloads\mysql-connector(1).jar"  ec2-user@107.21.154.91:.
+mysql-connector(1).jar                                                            100%  984KB 120.3KB/s   00:08
+
+
+5. Reverse Proxy Configuration
+   nginx installation on Instance 1: Reverse Proxy (Nginx)
+
+   <img width="960" height="540" alt="Image" src="https://github.com/user-attachments/assets/43f5f1cd-2039-4580-a6d3-1c707d23eb80" />
+
+Configured Nginx to forward traffic to the backend server on port 8080.
+
 
 
