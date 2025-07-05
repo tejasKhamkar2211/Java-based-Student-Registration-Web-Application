@@ -45,9 +45,17 @@ mysql-connector(1).jar                                                          
 5. Reverse Proxy Configuration
    nginx installation on Instance 1: Reverse Proxy (Nginx)
 
-   <img width="960" height="540" alt="Image" src="https://github.com/user-attachments/assets/43f5f1cd-2039-4580-a6d3-1c707d23eb80" />
+<img width="960" height="540" alt="Image" src="https://github.com/user-attachments/assets/43f5f1cd-2039-4580-a6d3-1c707d23eb80" />
 
 Configured Nginx to forward traffic to the backend server on port 8080.
+
+<img width="960" height="540" alt="Image" src="https://github.com/user-attachments/assets/8f4faf98-2ca3-4fe1-9371-2152d142cd58" />
+
+6 Access and URL Setup:
+http://13.222.179.72/
+<img width="960" height="540" alt="Image" src="https://github.com/user-attachments/assets/688dee0c-af2c-48ef-8619-0d3b51c307e0" />
+
+
 
 
 
